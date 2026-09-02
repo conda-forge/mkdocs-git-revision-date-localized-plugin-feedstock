@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - mkdocs <2,>=1.0
     - gitpython >=3.1.44
     - babel >=2.7.0
@@ -67,6 +67,7 @@ test:
     - mkdocs_git_revision_date_localized_plugin
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
