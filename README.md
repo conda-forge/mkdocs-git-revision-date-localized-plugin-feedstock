@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `mkdocs-git-revision-date-localized-plugin` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install mkdocs-git-revision-date-localized-plugin
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install mkdocs-git-revision-date-localized-plugin
 ```
 
-It is possible to list all of the versions of `mkdocs-git-revision-date-localized-plugin` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add mkdocs-git-revision-date-localized-plugin
+# for installing globally
+pixi global install mkdocs-git-revision-date-localized-plugin
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `mkdocs-git-revision-date-localized-plugin` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search mkdocs-git-revision-date-localized-plugin --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search mkdocs-git-revision-date-localized-plugin --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search mkdocs-git-revision-date-localized-plugin --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds mkdocs-git-revision-date-localized-plugin --channel con
 # List dependencies of `mkdocs-git-revision-date-localized-plugin`:
 mamba repoquery depends mkdocs-git-revision-date-localized-plugin --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
