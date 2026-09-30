@@ -189,4 +189,5 @@ Feedstock Maintainers
 =====================
 
 * [@cpcloud](https://github.com/cpcloud/)
+* [@jsmolic](https://github.com/jsmolic/)
 
