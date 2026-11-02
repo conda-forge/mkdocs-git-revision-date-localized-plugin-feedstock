@@ -1,5 +1,5 @@
 {% set name = "mkdocs-git-revision-date-localized-plugin" %}
-{% set version = "1.6.2" %}
+{% set version = "1.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 9f38e5cfef3d180f1c479a7190d72617267a5d79d8159b12e3ae39c80f6e7488
+  sha256: 72b7f27d780af4d9efc2eb70197404e4510ce5664de6a96e092a6050e35eab46
 
 build:
   noarch: python
@@ -61,6 +61,8 @@ requirements:
     # - click 
     # - GitPython 
     # - python-tzdata >=2023.3
+    # - python-tzdata >=2023.3
+    # - packaging >=20.0
     # - python-tzdata >=2023.3
     # - packaging >=20.0
     # - python-tzdata >=2023.3
